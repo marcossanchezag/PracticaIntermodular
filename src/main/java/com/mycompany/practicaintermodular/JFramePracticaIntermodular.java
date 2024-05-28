@@ -54,6 +54,31 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jlabelRadio = new javax.swing.JLabel();
+        jLabelDistancia = new javax.swing.JLabel();
+        jLabelPeriodo = new javax.swing.JLabel();
+        jLabelTemperatura = new javax.swing.JLabel();
+        jLabelTipo = new javax.swing.JLabel();
+        jLabelNumero = new javax.swing.JLabel();
+        jLabelFecha = new javax.swing.JLabel();
+        jLabelNombre = new javax.swing.JLabel();
+        CBoxSatelites = new javax.swing.JComboBox<>();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabelNombres = new javax.swing.JLabel();
+        jLabelPlanetas = new javax.swing.JLabel();
+        jLabelRadios = new javax.swing.JLabel();
+        jLabelDistancias = new javax.swing.JLabel();
+        jLabelPeriodos = new javax.swing.JLabel();
+        jLabelTemperaturas = new javax.swing.JLabel();
+        jLabelTipos = new javax.swing.JLabel();
+        jLabelFechas = new javax.swing.JLabel();
 
         jLabel9.setText("jLabel9");
 
@@ -98,7 +123,7 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
 
         jLabel16.setText("Información del planeta:");
 
-        jLabel17.setText("Satelites");
+        jLabel17.setText("Selecciona un Satelite: ");
 
         jLabel18.setText("Selecciona un planeta");
 
@@ -120,6 +145,29 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
+        CBoxSatelites.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Luna", "Fobos", "Deimos", "Ío", "Europa", "Ganimedes", "Calisto", "Titán", "Encélado", "Titania", "Oberón" }));
+        CBoxSatelites.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBoxSatelitesActionPerformed(evt);
+            }
+        });
+
+        jLabel27.setText("Distancia a su planeta: ");
+
+        jLabel28.setText("Periodo orbital");
+
+        jLabel29.setText("Temperatura media:");
+
+        jLabel30.setText("Tipo de Cuerpo: ");
+
+        jLabel32.setText("Fecha de creación:");
+
+        jLabel33.setText("Nombre: ");
+
+        jLabel34.setText("Radio: ");
+
+        jLabel31.setText("Planeta: ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -135,8 +183,7 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36))
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -155,22 +202,66 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(CBox, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jlabelRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelFecha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelNumero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelTipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelTemperatura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelPeriodo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelDistancia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addGap(18, 18, 18)
+                        .addComponent(CBoxSatelites, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabelRadios, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(35, 35, 35)
+                                    .addComponent(jLabelPlanetas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel30, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabelDistancias, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabelPeriodos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabelTemperaturas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabelTipos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabelFechas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabelNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(41, 41, 41))
         );
         layout.setVerticalGroup(
@@ -193,24 +284,40 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel16)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel19)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabelNombre))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel20)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel20)
+                                    .addComponent(jlabelRadio))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel21))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel21)
+                                    .addComponent(jLabelDistancia)))
                             .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel22)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel22)
+                                    .addComponent(jLabelPeriodo))
                                 .addGap(12, 12, 12)
-                                .addComponent(jLabel23)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel23)
+                                    .addComponent(jLabelTemperatura))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel24)
+                                    .addComponent(jLabelTipo))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel25)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel25)
+                                    .addComponent(jLabelNumero))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel26))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel26)
+                                    .addComponent(jLabelFecha)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
@@ -230,10 +337,49 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
                                     .addComponent(jLabel6)
                                     .addComponent(jLabel14)))
                             .addComponent(jLabel10))
-                        .addGap(19, 19, 19)
-                        .addComponent(jLabel17))
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(126, Short.MAX_VALUE))
+                        .addGap(3, 3, 3)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(CBoxSatelites, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabelNombres))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabelPlanetas))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel34)
+                            .addComponent(jLabelRadios))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabelDistancias))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel28)
+                            .addComponent(jLabelPeriodos))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel29)
+                            .addComponent(jLabelTemperaturas))
+                        .addGap(11, 11, 11)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel30)
+                            .addComponent(jLabelTipos))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(jLabel32))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabelFechas))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
@@ -247,31 +393,110 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
 
         switch (selectedItem) {
             case "Mercurio":
-
+                Conexionbbdd conexionMercurio = new Conexionbbdd();
+                String[] datosMercurio = conexionMercurio.conectarConsultaMercurio();
+                jLabelNombre.setText("Mercurio");
+                jlabelRadio.setText(datosMercurio[0]);
+                jLabelDistancia.setText(datosMercurio[1]);
+                jLabelPeriodo.setText(datosMercurio[2]);
+                jLabelTemperatura.setText(datosMercurio[3]);
+                jLabelTipo.setText(datosMercurio[4]);
+                jLabelNumero.setText(datosMercurio[5]);
+                jLabelFecha.setText(datosMercurio[6]);
                 break;
 
             case "Venus":
-
+                Conexionbbdd conexionVenus = new Conexionbbdd();
+                String[] datosVenus = conexionVenus.conectarConsultaVenus();
+                jLabelNombre.setText("Venus");
+                jlabelRadio.setText(datosVenus[0]);
+                jLabelDistancia.setText(datosVenus[1]);
+                jLabelPeriodo.setText(datosVenus[2]);
+                jLabelTemperatura.setText(datosVenus[3]);
+                jLabelTipo.setText(datosVenus[4]);
+                jLabelNumero.setText(datosVenus[5]);
+                jLabelFecha.setText(datosVenus[6]);
                 break;
 
             case "Tierra":
+                Conexionbbdd conexionTierra = new Conexionbbdd();
+                String[] datosTierra = conexionTierra.conectarConsultaTierra();
+                jLabelNombre.setText("Tierra");
+                jlabelRadio.setText(datosTierra[0]);
+                jLabelDistancia.setText(datosTierra[1]);
+                jLabelPeriodo.setText(datosTierra[2]);
+                jLabelTemperatura.setText(datosTierra[3]);
+                jLabelTipo.setText(datosTierra[4]);
+                jLabelNumero.setText(datosTierra[5]);
+                jLabelFecha.setText(datosTierra[6]);
+
+                break;
+
+            case "Marte":
+                Conexionbbdd conexionMarte = new Conexionbbdd();
+                String[] datosMarte = conexionMarte.conectarConsultaMarte();
+                jLabelNombre.setText("Marte");
+                jlabelRadio.setText(datosMarte[0]);
+                jLabelDistancia.setText(datosMarte[1]);
+                jLabelPeriodo.setText(datosMarte[2]);
+                jLabelTemperatura.setText(datosMarte[3]);
+                jLabelTipo.setText(datosMarte[4]);
+                jLabelNumero.setText(datosMarte[5]);
+                jLabelFecha.setText(datosMarte[6]);
 
                 break;
 
             case "Júpiter":
-
+                Conexionbbdd conexionJúpiter = new Conexionbbdd();
+                String[] datosJúpiter = conexionJúpiter.conectarConsultaJúpiter();
+                jLabelNombre.setText("Júpiter");
+                jlabelRadio.setText(datosJúpiter[0]);
+                jLabelDistancia.setText(datosJúpiter[1]);
+                jLabelPeriodo.setText(datosJúpiter[2]);
+                jLabelTemperatura.setText(datosJúpiter[3]);
+                jLabelTipo.setText(datosJúpiter[4]);
+                jLabelNumero.setText(datosJúpiter[5]);
+                jLabelFecha.setText(datosJúpiter[6]);
                 break;
 
             case "Saturno":
-
+                Conexionbbdd conexionSaturno = new Conexionbbdd();
+                String[] datosSaturno = conexionSaturno.conectarConsultaSaturno();
+                jLabelNombre.setText("Saturno");
+                jlabelRadio.setText(datosSaturno[0]);
+                jLabelDistancia.setText(datosSaturno[1]);
+                jLabelPeriodo.setText(datosSaturno[2]);
+                jLabelTemperatura.setText(datosSaturno[3]);
+                jLabelTipo.setText(datosSaturno[4]);
+                jLabelNumero.setText(datosSaturno[5]);
+                jLabelFecha.setText(datosSaturno[6]);
                 break;
 
             case "Urano":
-
+                Conexionbbdd conexionUrano = new Conexionbbdd();
+                String[] datosUrano = conexionUrano.conectarConsultaUrano();
+                jLabelNombre.setText("Urano");
+                jlabelRadio.setText(datosUrano[0]);
+                jLabelDistancia.setText(datosUrano[1]);
+                jLabelPeriodo.setText(datosUrano[2]);
+                jLabelTemperatura.setText(datosUrano[3]);
+                jLabelTipo.setText(datosUrano[4]);
+                jLabelNumero.setText(datosUrano[5]);
+                jLabelFecha.setText(datosUrano[6]);
                 break;
 
             case "Neptuno":
+                Conexionbbdd conexionNeptuno = new Conexionbbdd();
+                String[] datosNeptuno = conexionNeptuno.conectarConsultaNeptuno();
 
+                jLabelNombre.setText("Neptuno");
+                jlabelRadio.setText(datosNeptuno[0]);
+                jLabelDistancia.setText(datosNeptuno[1]);
+                jLabelPeriodo.setText(datosNeptuno[2]);
+                jLabelTemperatura.setText(datosNeptuno[3]);
+                jLabelTipo.setText(datosNeptuno[4]);
+                jLabelNumero.setText(datosNeptuno[5]);
+                jLabelFecha.setText(datosNeptuno[6]);
                 break;
 
             default:
@@ -280,6 +505,163 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_CBoxActionPerformed
+
+    private void CBoxSatelitesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBoxSatelitesActionPerformed
+        // TODO add your handling code here:
+
+        String selectedItem = (String) CBoxSatelites.getSelectedItem();
+
+        switch (selectedItem) {
+            case "Luna":
+                Conexionbbdd conexionLuna = new Conexionbbdd();
+                String[] datosLuna = conexionLuna.conectarConsultaLuna();
+                jLabelNombres.setText("Luna");
+                jLabelPlanetas.setText(datosLuna[0]);
+                jLabelRadios.setText(datosLuna[1]);
+                jLabelDistancias.setText(datosLuna[2]);
+                jLabelPeriodos.setText(datosLuna[3]);
+                jLabelTemperaturas.setText(datosLuna[4]);
+                jLabelTipos.setText(datosLuna[5]);
+                jLabelFechas.setText(datosLuna[6]);
+                break;
+
+            case "Fobos":
+                Conexionbbdd conexionFobos = new Conexionbbdd();
+                String[] datosFobos = conexionFobos.conectarConsultaFobos();
+                jLabelNombres.setText("Fobos");
+                jLabelPlanetas.setText(datosFobos[0]);
+                jLabelRadios.setText(datosFobos[1]);
+                jLabelDistancias.setText(datosFobos[2]);
+                jLabelPeriodos.setText(datosFobos[3]);
+                jLabelTemperaturas.setText(datosFobos[4]);
+                jLabelTipos.setText(datosFobos[5]);
+                jLabelFechas.setText(datosFobos[6]);
+                break;
+
+            case "Deimos":
+                Conexionbbdd conexionDeimos = new Conexionbbdd();
+                String[] datosDeimos = conexionDeimos.conectarConsultaDeimos();
+                jLabelNombres.setText("Deimos");
+                jLabelPlanetas.setText(datosDeimos[0]);
+                jLabelRadios.setText(datosDeimos[1]);
+                jLabelDistancias.setText(datosDeimos[2]);
+                jLabelPeriodos.setText(datosDeimos[3]);
+                jLabelTemperaturas.setText(datosDeimos[4]);
+                jLabelTipos.setText(datosDeimos[5]);
+                jLabelFechas.setText(datosDeimos[6]);
+                break;
+
+            case "Ío":
+                Conexionbbdd conexionÍo = new Conexionbbdd();
+                String[] datosÍo = conexionÍo.conectarConsultaÍo();
+                jLabelNombres.setText("Ío");
+                jLabelPlanetas.setText(datosÍo[0]);
+                jLabelRadios.setText(datosÍo[1]);
+                jLabelDistancias.setText(datosÍo[2]);
+                jLabelPeriodos.setText(datosÍo[3]);
+                jLabelTemperaturas.setText(datosÍo[4]);
+                jLabelTipos.setText(datosÍo[5]);
+                jLabelFechas.setText(datosÍo[6]);
+                break;
+
+
+            case "Europa":
+                Conexionbbdd conexionEuropa = new Conexionbbdd();
+                String[] datosEuropa = conexionEuropa.conectarConsultaEuropa();
+                jLabelNombres.setText("Europa");
+                jLabelPlanetas.setText(datosEuropa[0]);
+                jLabelRadios.setText(datosEuropa[1]);
+                jLabelDistancias.setText(datosEuropa[2]);
+                jLabelPeriodos.setText(datosEuropa[3]);
+                jLabelTemperaturas.setText(datosEuropa[4]);
+                jLabelTipos.setText(datosEuropa[5]);
+                jLabelFechas.setText(datosEuropa[6]);
+                break;
+
+            case "Ganimedes":
+                Conexionbbdd conexionGanimedes = new Conexionbbdd();
+                String[] datosGanimedes = conexionGanimedes.conectarConsultaGanimedes();
+                jLabelNombres.setText("Ganimedes");
+                jLabelPlanetas.setText(datosGanimedes[0]);
+                jLabelRadios.setText(datosGanimedes[1]);
+                jLabelDistancias.setText(datosGanimedes[2]);
+                jLabelPeriodos.setText(datosGanimedes[3]);
+                jLabelTemperaturas.setText(datosGanimedes[4]);
+                jLabelTipos.setText(datosGanimedes[5]);
+                jLabelFechas.setText(datosGanimedes[6]);
+                break;
+
+            case "Calisto":
+                Conexionbbdd conexionCalisto = new Conexionbbdd();
+                String[] datosCalisto = conexionCalisto.conectarConsultaCalisto();
+                jLabelNombres.setText("Calisto");
+                jLabelPlanetas.setText(datosCalisto[0]);
+                jLabelRadios.setText(datosCalisto[1]);
+                jLabelDistancias.setText(datosCalisto[2]);
+                jLabelPeriodos.setText(datosCalisto[3]);
+                jLabelTemperaturas.setText(datosCalisto[4]);
+                jLabelTipos.setText(datosCalisto[5]);
+                jLabelFechas.setText(datosCalisto[6]);
+                break;
+
+            case "Titán":
+                Conexionbbdd conexionTitán = new Conexionbbdd();
+                String[] datosTitán = conexionTitán.conectarConsultaTitán();
+                jLabelNombres.setText("Titán");
+                jLabelPlanetas.setText(datosTitán[0]);
+                jLabelRadios.setText(datosTitán[1]);
+                jLabelDistancias.setText(datosTitán[2]);
+                jLabelPeriodos.setText(datosTitán[3]);
+                jLabelTemperaturas.setText(datosTitán[4]);
+                jLabelTipos.setText(datosTitán[5]);
+                jLabelFechas.setText(datosTitán[6]);
+                break;
+
+            case "Encélado":
+                Conexionbbdd conexionEncélado = new Conexionbbdd();
+                String[] datosEncélado = conexionEncélado.conectarConsultaEncélado();
+                jLabelNombres.setText("Encélado");
+                jLabelPlanetas.setText(datosEncélado[0]);
+                jLabelRadios.setText(datosEncélado[1]);
+                jLabelDistancias.setText(datosEncélado[2]);
+                jLabelPeriodos.setText(datosEncélado[3]);
+                jLabelTemperaturas.setText(datosEncélado[4]);
+                jLabelTipos.setText(datosEncélado[5]);
+                jLabelFechas.setText(datosEncélado[6]);
+                break;
+
+            case "Titania":
+                Conexionbbdd conexionTitania = new Conexionbbdd();
+                String[] datosTitania = conexionTitania.conectarConsultaTitania();
+                jLabelNombres.setText("Titania");
+                jLabelPlanetas.setText(datosTitania[0]);
+                jLabelRadios.setText(datosTitania[1]);
+                jLabelDistancias.setText(datosTitania[2]);
+                jLabelPeriodos.setText(datosTitania[3]);
+                jLabelTemperaturas.setText(datosTitania[4]);
+                jLabelTipos.setText(datosTitania[5]);
+                jLabelFechas.setText(datosTitania[6]);
+                break;
+
+            case "Oberón":
+                Conexionbbdd conexionOberón = new Conexionbbdd();
+                String[] datosOberón = conexionOberón.conectarConsultaOberón();
+                jLabelNombres.setText("Oberón");
+                jLabelPlanetas.setText(datosOberón[0]);
+                jLabelRadios.setText(datosOberón[1]);
+                jLabelDistancias.setText(datosOberón[2]);
+                jLabelPeriodos.setText(datosOberón[3]);
+                jLabelTemperaturas.setText(datosOberón[4]);
+                jLabelTipos.setText(datosOberón[5]);
+                jLabelFechas.setText(datosOberón[6]);
+                break;
+
+            default:
+                throw new AssertionError();
+        }
+
+
+    }//GEN-LAST:event_CBoxSatelitesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -318,6 +700,7 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBox;
+    private javax.swing.JComboBox<String> CBoxSatelites;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -337,13 +720,37 @@ public class JFramePracticaIntermodular extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelDistancia;
+    private javax.swing.JLabel jLabelDistancias;
+    private javax.swing.JLabel jLabelFecha;
+    private javax.swing.JLabel jLabelFechas;
+    private javax.swing.JLabel jLabelNombre;
+    private javax.swing.JLabel jLabelNombres;
+    private javax.swing.JLabel jLabelNumero;
+    private javax.swing.JLabel jLabelPeriodo;
+    private javax.swing.JLabel jLabelPeriodos;
+    private javax.swing.JLabel jLabelPlanetas;
+    private javax.swing.JLabel jLabelRadios;
+    private javax.swing.JLabel jLabelTemperatura;
+    private javax.swing.JLabel jLabelTemperaturas;
+    private javax.swing.JLabel jLabelTipo;
+    private javax.swing.JLabel jLabelTipos;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel jlabelRadio;
     // End of variables declaration//GEN-END:variables
 }
